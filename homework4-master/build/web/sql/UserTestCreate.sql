@@ -1,4 +1,4 @@
-CREATE TABLE UserTest (
+CREATE TABLE library (
   FirstName VARCHAR(50), 
   LastName VARCHAR(50), 
   EmailAddress VARCHAR(50), 
@@ -6,5 +6,5 @@ CREATE TABLE UserTest (
   DueDate DATE,
 
 
-  PRIMARY KEY (XXX)
+  PRIMARY KEY (BookTitle)
 )

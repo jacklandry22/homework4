@@ -1,5 +1,5 @@
 
-<!--Copyright Jack Landry and Lexa Grasz 2015-->
+<!--Copyright Lexa Grasz and Jack Landry 2015-->
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 

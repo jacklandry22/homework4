@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class thankYou_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class checkedOutBooks_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -48,8 +48,6 @@ public final class thankYou_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
       out.write("\n");
-      out.write("\n");
-      out.write("\n");
       out.write("<!DOCTYPE html>\n");
       out.write("\n");
       out.write("<!DOCTYPE html>\n");
@@ -72,20 +70,57 @@ public final class thankYou_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("\n");
       out.write("<body>\n");
+      out.write("    <div>\n");
+      out.write("<h2>Currently checked out books</h2>\n");
+      out.write("\n");
+      out.write("<table>\n");
+      out.write("\n");
+      out.write("  <tr>\n");
+      out.write("    <th>Patron Name</th>\n");
+      out.write("    <th>Email Address</th>\n");
+      out.write("    <th>Book Title</th>\n");
+      out.write("    <th>Due Date</th>\n");
+      out.write("    <th>Overdue</th>\n");
+      out.write("  </tr>\n");
+      out.write("\n");
       out.write("  \n");
+      out.write(" ");
+      out.write("\n");
+      out.write("  <tr>\n");
+      out.write("<!--    <td>");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${user.firstName}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write(" + ");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${user.lastName}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("</td>\n");
+      out.write("    <td>");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${user.email}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("</td>\n");
+      out.write("    <td>");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${user.book}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("</td>\n");
+      out.write("    <td>");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${user.dueDate}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("</td>\n");
+      out.write("    <td>");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${user.overdue}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("</td>-->\n");
+      out.write("      <td>a</td>\n");
+      out.write("       <td>a</td>\n");
+      out.write("        <td>a</td>\n");
+      out.write("         <td>a</td>\n");
+      out.write("         <td>a</td>\n");
+      out.write("    <td><label class=\"spacer\">&nbsp;</label>\n");
+      out.write("      <input type=\"submit\" value=\"Checkout\" class=\"button\"></td>\n");
+      out.write("  </tr>\n");
+      out.write(" ");
+      out.write("\n");
+      out.write("\n");
+      out.write("</table>\n");
+      out.write("\n");
+      out.write("<p><a href=\"index.jsp\">Return to front page</a></p>\n");
       out.write("  \n");
+      out.write("    </div>\n");
       out.write("  \n");
-      out.write("  <p>Thank you for your patronage of the Belk Library. You&#39;ve successfully \n");
-      out.write("    checked out the book, ");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${user.BookTitle}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-      out.write(". Please note that this book is due \n");
-      out.write("    back on ");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${user.DueDate}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-      out.write(".  A friendly email reminder will be sent to \n");
-      out.write("    you if the book becomes overdue.\n");
-      out.write("  </p>\n");
-      out.write("  \n");
-      out.write("  <a href=\"index.jsp\">Return to front page </a>\n");
       out.write("\n");
       out.write("<!--Copyright Lexa Grasz and Jack Landry 2015-->\n");
       out.write("\n");

@@ -1,22 +1,13 @@
-<%-- 
-    Document   : index
-    Created on : Nov 29, 2015, 8:29:57 PM
-    Author     : lexagrasz
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
+<%-- Copyright Lexa Grasz and Jack Landry 2015 --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ include file="/includes/header.html" %>
 <body>
 
   <nav>
       <ul>
-          <li><a href="/checkout.jsp"> Check out a book </a></li>
-  <li>Manage checked out books</li>
+          <li><a href="checkout.jsp"> Check out a book </a></li>
+          <li><a href="checkedOutBooks.jsp"> Manage checked out books </a></li>
       </ul>
   </nav>
-  
-  
-  
+    
 <%@ include file="/includes/footer.jsp" %>

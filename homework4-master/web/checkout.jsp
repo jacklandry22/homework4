@@ -1,29 +1,23 @@
-<%-- 
-    Document   : checkout
-    Created on : Nov 29, 2015, 8:53:27 PM
-    Author     : lexagrasz
---%>
+ 
+<%-- Copyright Jack Landry and Lexa Grasz 2015 --%> 
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
+
+
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ include file="/includes/header.html" %>
 <body>
-  
-  
-  
-   <form class="form" action="calculate" method="post">
-     
+    
+   <form class="form" action="library" method="post">
      <h2>Checkout a book</h2>
-      <input type="hidden" name="action" value="add">        
+      <input type="hidden" name="action" value="checkout">        
       <label>First Name:</label>
-      <input type="text" name="first" required><br>
+      <input type="text" name="first" value="${user.firstName}" required ><br>
       <label>Last Name:</label>
-      <input  type="text" name="last"  required><br>
+      <input  type="text" name="last" value="${user.lastName}"  required><br>
       <label>Email Address:</label>
-      <input  type="email"  name="email" required ><br>
+      <input  type="email"  name="email" value="${user.email}" required ><br>
       <label>Book Title:</label>
-      <input  type="text"  name="title" required><br>
+      <input  class="book" type="text"  name="title" value="${user.book}" required><br>
       <label class="spacer">&nbsp;</label>
       <input type="submit" value="Checkout" class="button">
     </form>
