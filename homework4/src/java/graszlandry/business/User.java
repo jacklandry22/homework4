@@ -32,6 +32,9 @@ public class User implements Serializable {
         firstName = "";
         lastName = "";
         book = "";
+        calculateDate();
+        formatDate();
+        isOverdue();
  
     }
 
@@ -164,8 +167,9 @@ public class User implements Serializable {
      * formats the date into mm/dd/yyyy format
      */
     public String formatDate() {
-        DateFormat dateFormat = new SimpleDateFormat("MM/dd//yyyy");
+        DateFormat dateFormat = new SimpleDateFormat("MM-dd-yyyy");
         formattedDate = dateFormat.format(dueDate);
+        System.out.println(formattedDate);
         return formattedDate;
     }
     

@@ -24,10 +24,10 @@
       <td>${user.firstName} ${user.lastName}</td> <br>
   <td>${user.email}</td> 
     <td>${user.book}</td>
-    <td>${user.dueDate}</td>
+    <td>${user.formattedDate}</td>
     <td>${user.overdue}</td>
     <td>
-             <form class="form" action="library" method="post">
+             <form class="checkin" action="library" method="post">
       <input type="hidden" name="action" value="checkin_user"> 
       <input type="hidden" name="title" value="${user.book}">
       <label class="spacer">&nbsp;</label>

@@ -129,7 +129,7 @@ public class CheckoutServlet extends HttpServlet{
             ArrayList<User> users = UserDB.selectUsers();
             request.setAttribute("users", users);
             
-            // url="/checkedOutBooks.jsp";
+            url="/checkedOutBooks.jsp";
         }
         
         getServletContext()

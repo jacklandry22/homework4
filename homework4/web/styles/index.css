@@ -39,7 +39,7 @@ nav{
   padding: 1em;
 }
 
-form{
+.form{
   border: 0.3em solid red;
   display: block;
   line-height: .3em;
@@ -104,6 +104,18 @@ h2 {
     margin-bottom: 1.5em;
 }
 tr > td {
-    padding-bottom: 1em;
-    padding-top: 1em;
+    padding-bottom: 0em;
+    padding-top: 0em;
+    line-height: 1em;
+   
+}
+
+tr > th {
+    line-height: 1em;
+    
+}
+
+.checkin {
+    padding-top: 0em;
+    padding-bottom: 3em;
 }
